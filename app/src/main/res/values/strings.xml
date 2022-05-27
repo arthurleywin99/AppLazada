@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppLazada</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+</resources>

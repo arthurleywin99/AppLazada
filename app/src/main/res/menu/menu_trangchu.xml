@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itSearch"
+        android:title="Tìm kiếm"
+        android:icon="@drawable/outline_search_white_24dp"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/itShoppingCart"
+        android:title="Giỏ hàng"
+        android:icon="@drawable/outline_shopping_cart_white_24dp"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_item_shopping_cart"
+        />
+
+    <item
+        android:id="@+id/itMoreVert"
+        android:title="Tuỳ chọn khác"
+        app:showAsAction="always"
+        android:icon="@drawable/outline_more_vert_white_24dp"
+        >
+        <menu>
+            <item
+                android:id="@+id/itLogin"
+                android:title="Đăng nhập"
+                android:icon="@drawable/outline_login_white_24dp"
+                />
+
+            <item
+                android:id="@+id/itMyOrder"
+                android:title="Đơn hàng của tôi"
+                android:icon="@drawable/outline_content_paste_white_24dp"
+                />
+
+            <item
+                android:id="@+id/itSetting"
+                android:title="Cài đặt"
+                android:icon="@drawable/outline_settings_white_24dp"
+                />
+
+            <item
+                android:id="@+id/itDangXuat"
+                android:title="Đăng xuất"
+                android:icon="@drawable/baseline_logout_white_24dp"
+                />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/g_ed_background"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imAnhDaiDien"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/galaxy_s22_ultra_burgundy"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/txtTenNguoiDanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Bùi Giang"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/rbDanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+            android:isIndicator="true"
+            android:numStars="5"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNoiDungDanhGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColorHint="@color/gray"
+        android:gravity="top"
+        android:background="@drawable/g_ed_background"
+        android:inputType="textMultiLine"
+        />
+
+</LinearLayout>

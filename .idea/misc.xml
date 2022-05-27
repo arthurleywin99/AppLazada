@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable-v24/bg_shape_corner_color_white.xml" value="0.183" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape.xml" value="0.2095" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_corner.xml" value="0.1955" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_corner_color.xml" value="0.2025" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_corner_color_blue.xml" value="0.179" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_corner_color_green.xml" value="0.172" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_corner_color_orange.xml" value="0.206" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_corner_color_red.xml" value="0.183" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_corner_color_white.xml" value="0.183" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_orange.xml" value="0.2095" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/bg_shape_topright_botright.xml" value="0.2095" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/border_layout.xml" value="0.244" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/circle.xml" value="0.2095" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/custom_bg_circle_corner.xml" value="0.186" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/custom_bg_rounded_corner.xml" value="0.186" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/custom_button.xml" value="0.2095" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/g_ed_background.xml" value="0.2515" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/g_ed_background_smaller.xml" value="0.2515" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/drawable/vienfacebook.xml" value="0.172" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_item_shopping_cart.xml" value="5.0" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_chitietdonmua.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_danhgia.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_khongtimthaysanpham.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_list_sanpham.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_recycler_thuonghieulon.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_recyclerview_dientu.xml" value="0.242520398912058" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_recyclerview_noibat.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_rounded.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_sanpham.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_layout_topdienthoaivamaytinhbang.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/custom_toast_layout.xml" value="0.20036264732547598" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_chitietsanpham.xml" value="0.25" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_chitietthanhtoan.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_chuongtrinhkhuyenmai.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_dangnhap.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_danhgiasanpham.xml" value="0.25" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_dientu.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_doimatkhau.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_doithongtin.xml" value="0.2954253954681488" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_donhangdadat.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_fragment_damua.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_fragment_dangky.xml" value="0.4589403973509934" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_fragment_dangnhap.xml" value="0.4535340314136126" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_fragment_slider_chitietsanpham.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_giohang.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_hienthisanphamtheodanhmuc.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_home_screen.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_khongtimthaysanpham.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_lamdep.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_mevabe.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_nhacuavadoisong.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_noibat.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_thanhtoan.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_thethaovadulich.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_thoitrang.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_thongtintaikhoan.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_thuonghieu.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_timkiem.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/layout/layout_trangchu.xml" value="0.33" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/menu/custom_shopping_cart.xml" value="0.3609375" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/menu/menu_timkiem.xml" value="0.29628046173578454" />
+        <entry key="..\:/Users/buing/OneDrive/Desktop/AppLazada/app/src/main/res/menu/menu_trangchu.xml" value="0.3609375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

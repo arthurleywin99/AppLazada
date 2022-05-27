@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity android:name=".View.SplashScreen.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="myownpersonaldomain.com" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+
+        <activity android:name=".View.TrangChu.TrangChuActivity" />
+        <activity android:name=".View.LoginScreen.DangNhapActivity" />
+        <activity android:name=".View.HienThiSanPhamTheoDanhMuc.HienThiDanhMucSanPhamActivity" />
+        <activity android:name=".View.ChiTietSanPham.ChiTietSanPhamActivity" />
+        <activity android:name=".View.GioHang.GioHangActivity" />
+        <activity android:name=".View.ThanhToan.ThanhToanActivity" />
+        <activity android:name=".View.ThongTinTaiKhoan.ThongTinTaiKhoanActivity" />
+        <activity android:name=".View.TimKiem.TimKiemActivity" />
+        <activity android:name=".View.DonDatHang.DonMuaActivity" />
+        <activity android:name=".View.DoiMatKhau.DoiMatKhauActivity" />
+        <activity android:name=".View.DoiThongTinTaiKhoan.DoiThongTinTaiKhoanActivity" />
+        <activity android:name=".View.DanhGiaSanPham.DanhGiaSanPhamActivity" />
+    </application>
+
+</manifest>

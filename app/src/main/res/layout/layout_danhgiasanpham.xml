@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.DanhGiaSanPham.DanhGiaSanPhamActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/bgToolbar"
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/light_cyan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/galaxy_s22_ultra_burgundy"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Samsung Galaxy S22 Ultra Burgundy"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rbDanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp"
+            android:theme="@style/ratingBar"
+            android:numStars="5"
+            android:rating="5"
+            />
+
+        <EditText
+            android:id="@+id/edNoiDungDanhGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:lines="6"
+            android:hint="Nhập đánh giá của bạn"
+            android:textColorHint="@color/gray"
+            android:gravity="top"
+            android:background="@drawable/g_ed_background"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="40dp"
+            />
+
+        <Button
+            android:id="@+id/btnGuiDanhGia"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Gửi Đánh Giá"
+            android:background="@drawable/bg_shape_corner_color_orange"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
