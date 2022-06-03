@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,6 +66,7 @@ public class FragmentDangNhap extends Fragment {
                  * Mã hoá mật khẩu bằng MD5
                  */
                 String password = LocalVariablesAndMethods.MD5Hash(input_password.getText().toString());
+                Log.d("PASSWORD", password);
 
                 /**
                  * Kiểm tra dữ liệu nhập vào có tồn tại trong DB hay không
@@ -77,11 +79,16 @@ public class FragmentDangNhap extends Fragment {
                             Toast.makeText(getActivity(), "Sai email hoặc mật khẩu", Toast.LENGTH_LONG).show();
                         }
                         else {
-                            modelNhanVien.MoKetNoiSQL(getContext());
-                            modelNhanVien.ThemNhanVien(res);
-                            Toast.makeText(getActivity(), "Đăng nhập thành công", Toast.LENGTH_LONG).show();
-                            startActivity(new Intent(getActivity(), TrangChuActivity.class));
-                            getActivity().finish();
+                            if (res.getTrangThai() == 1) {
+                                modelNhanVien.MoKetNoiSQL(getContext());
+                                modelNhanVien.ThemNhanVien(res);
+                                Toast.makeText(getActivity(), "Đăng nhập thành công", Toast.LENGTH_LONG).show();
+                                startActivity(new Intent(getActivity(), TrangChuActivity.class));
+                                getActivity().finish();
+                            }
+                            else {
+                                Toast.makeText(getActivity(), "Tài khoản đang bị khoá. Vui lòng liên hệ 0354321915 để biết thêm chi tiết", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }
 

@@ -14,11 +14,12 @@ public class NhanVien implements Serializable {
     private String GioiTinh;
     private String CMND;
     private int MaLoaiNV;
+    private int TrangThai;
 
     public NhanVien() {
     }
 
-    public NhanVien(int maNV, String tenNV, String tenDangNhap, String matKhau, String diaChi, String ngaySinh, String SDT, String gioiTinh, String CMND, int maLoaiNV) {
+    public NhanVien(int maNV, String tenNV, String tenDangNhap, String matKhau, String diaChi, String ngaySinh, String SDT, String gioiTinh, String CMND, int maLoaiNV, int trangThai) {
         MaNV = maNV;
         TenNV = tenNV;
         TenDN = tenDangNhap;
@@ -29,9 +30,10 @@ public class NhanVien implements Serializable {
         GioiTinh = gioiTinh;
         this.CMND = CMND;
         MaLoaiNV = maLoaiNV;
+        TrangThai = trangThai;
     }
 
-    public NhanVien(String tenNV, String tenDangNhap, String matKhau, String diaChi, String ngaySinh, String SDT, String gioiTinh, String CMND, int maLoaiNV) {
+    public NhanVien(String tenNV, String tenDangNhap, String matKhau, String diaChi, String ngaySinh, String SDT, String gioiTinh, String CMND, int maLoaiNV, int trangThai) {
         TenNV = tenNV;
         TenDN = tenDangNhap;
         MatKhau = matKhau;
@@ -41,6 +43,7 @@ public class NhanVien implements Serializable {
         GioiTinh = gioiTinh;
         this.CMND = CMND;
         MaLoaiNV = maLoaiNV;
+        TrangThai = trangThai;
     }
 
     public int getMaNV() {
@@ -121,5 +124,13 @@ public class NhanVien implements Serializable {
 
     public void setMaLoaiNV(int maLoaiNV) {
         MaLoaiNV = maLoaiNV;
+    }
+
+    public int getTrangThai() {
+        return TrangThai;
+    }
+
+    public void setTrangThai(int TrangThai) {
+        this.TrangThai = TrangThai;
     }
 }

@@ -171,7 +171,9 @@ public class TrangChuActivity extends AppCompatActivity implements View.OnClickL
                 startActivity(new Intent(TrangChuActivity.this, DangNhapActivity.class));
                 modelNhanVien.MoKetNoiSQL(this);
                 NhanVien nhanVien = modelNhanVien.LayNhanVien();
-                modelNhanVien.XoaNhanVien(nhanVien.getMaNV());
+                if (nhanVien != null) {
+                    modelNhanVien.XoaNhanVien(nhanVien.getMaNV());
+                }
                 finish();
                 break;
             }

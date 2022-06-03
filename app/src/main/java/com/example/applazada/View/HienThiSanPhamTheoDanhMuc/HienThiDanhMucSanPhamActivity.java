@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -20,10 +21,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.applazada.API.ApiService;
 import com.example.applazada.Adapter.AdapterCardSanPham;
+import com.example.applazada.Model.DangNhapSQLite.ModelNhanVien;
 import com.example.applazada.Model.GioHangSQLite.ModelGioHang;
+import com.example.applazada.Model.NhanVien;
 import com.example.applazada.Model.SanPham;
 import com.example.applazada.R;
+import com.example.applazada.View.DonDatHang.DonMuaActivity;
 import com.example.applazada.View.GioHang.GioHangActivity;
+import com.example.applazada.View.LoginScreen.DangNhapActivity;
+import com.example.applazada.View.ThongTinTaiKhoan.ThongTinTaiKhoanActivity;
+import com.example.applazada.View.TrangChu.TrangChuActivity;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -39,6 +46,7 @@ public class HienThiDanhMucSanPhamActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     Toolbar toolbar;
     ModelGioHang modelGioHang = new ModelGioHang();
+    ModelNhanVien modelNhanVien = new ModelNhanVien();
     TextView txtGioHang;
     private boolean onPause = false;
     private boolean isUp_Loc = false, isUp_SapXep = false;
@@ -292,6 +300,74 @@ public class HienThiDanhMucSanPhamActivity extends AppCompatActivity {
         txtGioHang = giaoDienCustomGioHang.findViewById(R.id.txtSoLuongSanPhamGioHang);
         txtGioHang.setText(String.valueOf(modelGioHang.LayDanhSachSanPhamTrongGioHang().size()));
 
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            /**
+             * Đăng nhập
+             */
+            case R.id.itLogin: {
+                modelNhanVien.MoKetNoiSQL(this);
+                NhanVien nhanVien = modelNhanVien.LayNhanVien();
+
+                if (nhanVien != null) {
+                    Toast.makeText(this, "Bạn đã đăng nhập rồi", Toast.LENGTH_SHORT).show();
+                    break;
+                }
+                else {
+                    startActivity(new Intent(HienThiDanhMucSanPhamActivity.this, DangNhapActivity.class));
+                    finish();
+                }
+                break;
+            }
+            /**
+             * Thông tin tài khoản
+             */
+            case R.id.itSetting: {
+                modelNhanVien.MoKetNoiSQL(this);
+                NhanVien nhanVien = modelNhanVien.LayNhanVien();
+                if (nhanVien == null) {
+                    startActivity(new Intent(HienThiDanhMucSanPhamActivity.this, DangNhapActivity.class));
+                    finish();
+                }
+                else {
+                    startActivity(new Intent(HienThiDanhMucSanPhamActivity.this, ThongTinTaiKhoanActivity.class));
+                }
+                break;
+            }
+            /**
+             * Đơn hàng của tôi
+             */
+            case R.id.itMyOrder: {
+                modelNhanVien.MoKetNoiSQL(this);
+                NhanVien nhanVien = modelNhanVien.LayNhanVien();
+                if (nhanVien == null) {
+                    startActivity(new Intent(HienThiDanhMucSanPhamActivity.this, DangNhapActivity.class));
+                    finish();
+                }
+                else {
+                    startActivity(new Intent(HienThiDanhMucSanPhamActivity.this, DonMuaActivity.class));
+                }
+                break;
+            }
+            /**
+             * Đăng xuất
+             */
+            case R.id.itDangXuat: {
+                startActivity(new Intent(HienThiDanhMucSanPhamActivity.this, DangNhapActivity.class));
+                modelNhanVien.MoKetNoiSQL(this);
+                NhanVien nhanVien = modelNhanVien.LayNhanVien();
+                if (nhanVien != null) {
+                    modelNhanVien.XoaNhanVien(nhanVien.getMaNV());
+                }
+                finish();
+                break;
+            }
+        }
         return true;
     }
 

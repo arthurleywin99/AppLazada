@@ -16,6 +16,7 @@ public class DbNhanVien extends SQLiteOpenHelper {
     public static String TB_NHANVIEN_GIOITINH = "GIOITINH";
     public static String TB_NHANVIEN_CMND = "CMND";
     public static String TB_NHANVIEN_MALOAINV = "MALOAINV";
+    public static String TB_NHANVIEN_TRANGTHAI = "TRANGTHAI";
 
     public DbNhanVien(Context context) {
         super(context, "SQLNHANVIEN", null, 1);
@@ -26,7 +27,8 @@ public class DbNhanVien extends SQLiteOpenHelper {
         String tbNhanVien = "CREATE TABLE " + TB_NHANVIEN + " (" + TB_NHANVIEN_MANV + " INTEGER PRIMARY KEY, "
                 + TB_NHANVIEN_TENNV + " TEXT, " + TB_NHANVIEN_TENDN + " TEXT, " + TB_NHANVIEN_MATKHAU + " TEXT, "
                 + TB_NHANVIEN_DIACHI + " TEXT, " + TB_NHANVIEN_NGAYSINH + " TEXT, " + TB_NHANVIEN_SDT + " TEXT, "
-                + TB_NHANVIEN_GIOITINH + " TEXT, " + TB_NHANVIEN_CMND + " TEXT, " + TB_NHANVIEN_MALOAINV + " INTEGER);";
+                + TB_NHANVIEN_GIOITINH + " TEXT, " + TB_NHANVIEN_CMND + " TEXT, " + TB_NHANVIEN_MALOAINV + " INTEGER, "
+                + TB_NHANVIEN_TRANGTHAI + " INTEGER);";
 
         sqLiteDatabase.execSQL(tbNhanVien);
     }

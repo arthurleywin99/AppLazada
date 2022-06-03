@@ -9,20 +9,21 @@ public class SanPham implements Serializable {
     private int MaTH;
     private int LuotMua;
     private int SoLuongTonKho;
-    private String TenSP, AnhLon, AnhNho, ThongTin;
+    private String TenSP, AnhLon, ThongTin;
     private long Gia;
     private byte[] HinhGioHang;
+    private int TrangThai;
 
     public SanPham() {
     }
 
-    public SanPham(int maSP, String tenSP, long gia, String anhLon, String anhNho, String thongTin, int soLuongTonKho, int maLoaiSP, int maTH, int luotMua) {
+    public SanPham(int maSP, String tenSP, long gia, String anhLon, String thongTin, int soLuongTonKho, int maLoaiSP, int maTH, int luotMua, int trangThai) {
         MaSP = maSP;
         MaLoaiSP = maLoaiSP;
         MaTH = maTH;
         TenSP = tenSP;
         AnhLon = anhLon;
-        AnhNho = anhNho;
+        TrangThai = trangThai;
         ThongTin = thongTin;
         SoLuongTonKho = soLuongTonKho;
         Gia = gia;
@@ -77,14 +78,6 @@ public class SanPham implements Serializable {
         AnhLon = anhLon;
     }
 
-    public String getAnhNho() {
-        return AnhNho;
-    }
-
-    public void setAnhNho(String anhNho) {
-        AnhNho = anhNho;
-    }
-
     public String getThongTin() {
         return ThongTin;
     }
@@ -123,5 +116,13 @@ public class SanPham implements Serializable {
 
     public void setSoLuongTonKho(int soLuongTonKho) {
         SoLuongTonKho = soLuongTonKho;
+    }
+
+    public int getTrangThai() {
+        return TrangThai;
+    }
+
+    public void setTrangThai(int trangThai) {
+        TrangThai = trangThai;
     }
 }

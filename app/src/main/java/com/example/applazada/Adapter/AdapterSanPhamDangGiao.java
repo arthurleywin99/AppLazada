@@ -31,7 +31,6 @@ import retrofit2.Response;
 public class AdapterSanPhamDangGiao extends RecyclerView.Adapter<AdapterSanPhamDangGiao.ViewHolderSanPhamDangXuLy> {
     Context context;
     List<SanPhamMua> sanPhamList;
-    ModelNhanVien modelNhanVien = new ModelNhanVien();
 
     public AdapterSanPhamDangGiao(Context context, List<SanPhamMua> sanPhamList) {
         this.context = context;

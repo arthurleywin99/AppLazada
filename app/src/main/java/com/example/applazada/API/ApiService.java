@@ -87,7 +87,7 @@ public interface ApiService {
     @GET("api/sanpham/gettop.php")
     Call<List<SanPham>> LayTopDienThoaiVaMayTinhBang();
 
-    @GET("api/sanpham/get.php")
+    @GET("api/sanpham/getbybrand.php")
     Call<List<SanPham>> LayDanhSachSanPhamTheoMaTH(@Query("mathuonghieu") int MaTH,
                                                      @Query("tenthuonghieu") String TenTH);
 

@@ -95,6 +95,7 @@ public class FragmentDangKy extends Fragment {
                 nhanVien.setGioiTinh(GT);
                 nhanVien.setCMND(CMND);
                 nhanVien.setMaLoaiNV(2);
+                nhanVien.setTrangThai(1);
 
                 /**
                  * Tạo một record mới vào bảng NhanVien trong DB

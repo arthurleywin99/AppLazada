@@ -29,6 +29,7 @@ public class ModelNhanVien {
         contentValues.put(DbNhanVien.TB_NHANVIEN_GIOITINH, nhanVien.getGioiTinh());
         contentValues.put(DbNhanVien.TB_NHANVIEN_CMND, nhanVien.getCMND());
         contentValues.put(DbNhanVien.TB_NHANVIEN_MALOAINV, nhanVien.getMaLoaiNV());
+        contentValues.put(DbNhanVien.TB_NHANVIEN_TRANGTHAI, nhanVien.getTrangThai());
 
         long id = database.insert(DbNhanVien.TB_NHANVIEN, null, contentValues);
         return id > 0;
@@ -61,6 +62,7 @@ public class ModelNhanVien {
             String gioitinh = cursor.getString(7);
             String cmnd = cursor.getString(8);
             int maloainv = cursor.getInt(9);
+            int trangthai = cursor.getInt(10);
 
             nhanVien.setMaNV(manv);
             nhanVien.setTenNV(tennv);
@@ -72,6 +74,7 @@ public class ModelNhanVien {
             nhanVien.setGioiTinh(gioitinh);
             nhanVien.setCMND(cmnd);
             nhanVien.setMaLoaiNV(maloainv);
+            nhanVien.setTrangThai(trangthai);
 
             cursor.close();
             return nhanVien;
